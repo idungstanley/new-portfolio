@@ -198,15 +198,19 @@ export default function Home() {
                   title: "Kiub OS",
                   excerpt: "With Kiub, you can find notes, decisions, or action items from the same tab.",
                   date: "Dec 2023",
-                  // readTime: "5 min",
                   link: "https://staging.kiub.ai/"
                 },
                 {
                   title: "TheFullSnackDevs Academy",
                   excerpt: "TheFullSnackDevs Academy is a tech-focused training platform designed to help individuals build sustainable careers in software development.",
-                  date: "Nov 2024",
-                  // readTime: "8 min",
+                  date: "Jan 2025",
                   link: "https://academy.thefullsnackdevs.com/"
+                },
+                {
+                  title: "Talstrike platform for athlete",
+                  excerpt: "A Social media platform for athlete",
+                  date: "Nov 2024",
+                  link: "https://devapp.talstrike.com"
                 }
               ].map((post, index) => (
                 <Link
@@ -218,7 +222,6 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
                       <span>{post.date}</span>
-                      <span>{post.readTime}</span>
                     </div>
 
                     <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
