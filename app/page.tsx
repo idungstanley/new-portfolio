@@ -123,7 +123,7 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl font-light">Selected Work</h2>
-              <div className="text-sm text-muted-foreground font-mono">2017 — 2025</div>
+              <div className="text-sm text-muted-foreground font-mono">2017 — 2022</div>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
@@ -190,36 +190,28 @@ export default function Home() {
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
           <div className="space-y-12 sm:space-y-16">
-            <h2 className="text-3xl sm:text-4xl font-light">Recent Thoughts</h2>
+            <h2 className="text-3xl sm:text-4xl font-light">Recent Projects</h2>
 
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
               {[
                 {
-                  title: "The Future of Web Development",
-                  excerpt: "Exploring how AI and automation are reshaping the way we build for the web.",
-                  date: "Dec 2024",
-                  readTime: "5 min",
+                  title: "Kiub OS",
+                  excerpt: "With Kiub, you can find notes, decisions, or action items from the same tab.",
+                  date: "Dec 2023",
+                  // readTime: "5 min",
+                  link: "https://staging.kiub.ai/"
                 },
                 {
-                  title: "Design Systems at Scale",
-                  excerpt: "Lessons learned from building and maintaining design systems across multiple products.",
+                  title: "TheFullSnackDevs Academy",
+                  excerpt: "TheFullSnackDevs Academy is a tech-focused training platform designed to help individuals build sustainable careers in software development.",
                   date: "Nov 2024",
-                  readTime: "8 min",
-                },
-                {
-                  title: "Performance-First Development",
-                  excerpt: "Why performance should be a first-class citizen in your development workflow.",
-                  date: "Oct 2024",
-                  readTime: "6 min",
-                },
-                {
-                  title: "The Art of Code Review",
-                  excerpt: "Building better software through thoughtful and constructive code reviews.",
-                  date: "Sep 2024",
-                  readTime: "4 min",
-                },
+                  // readTime: "8 min",
+                  link: "https://academy.thefullsnackdevs.com/"
+                }
               ].map((post, index) => (
-                <article
+                <Link
+                  href={post.link}
+                  target="_blank"
                   key={index}
                   className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
                 >
@@ -235,8 +227,8 @@ export default function Home() {
 
                     <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
 
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                      <span>Read more</span>
+                    <Link href={post.link} target="_blank"  className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                      <span>Visit site</span>
                       <svg
                         className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                         fill="none"
@@ -250,9 +242,9 @@ export default function Home() {
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
-                    </div>
+                    </Link>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
@@ -293,6 +285,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { name: "GitHub", handle: "@idungstanley", url: "https://github.com/idungstanley" },
+                  { name: "X", handle: "@thecodedchamp", url: "https://x.com/thecodedchamp" },
                   { name: "LinkedIn", handle: "stanley1dung", url: "https://www.linkedin.com/in/stanley1dung" },
                 ].map((social) => (
                   <Link
