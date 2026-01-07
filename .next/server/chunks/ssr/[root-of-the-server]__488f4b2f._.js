@@ -1,0 +1,3 @@
+module.exports=[61189,a=>{a.v({className:"geist_6a0e6105-module__QVq-Ba__className",variable:"geist_6a0e6105-module__QVq-Ba__variable"})},33290,a=>{"use strict";var b=a.i(7997),c=a.i(61189);let d={className:c.default.className,style:{fontFamily:"'Geist', 'Geist Fallback'",fontStyle:"normal"}};function e({children:a}){return(0,b.jsx)("html",{lang:"en",className:`${d.variable}`,children:(0,b.jsx)("body",{className:"font-sans antialiased",children:a})})}null!=c.default.variable&&(d.variable=c.default.variable),a.s(["default",()=>e,"metadata",0,{title:"Stanley Sunday - Senior Frontend Developer",description:"Senior frontend developer with 5 years of experience."}],33290)}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__488f4b2f._.js.map
