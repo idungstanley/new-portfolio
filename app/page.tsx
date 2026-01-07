@@ -62,7 +62,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
             <div className="lg:col-span-3 space-y-6 sm:space-y-8">
               <div className="space-y-3 sm:space-y-2">
-                <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
+                <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2026</div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
                   Stanley
                   <br />
@@ -93,15 +93,15 @@ export default function Home() {
                 <div className="text-sm text-muted-foreground font-mono">CURRENTLY</div>
                 <div className="space-y-2">
                   <div className="text-foreground">Senior Frontend Developer</div>
-                  <div className="text-muted-foreground">@ TALSTRIKE</div>
-                  <div className="text-xs text-muted-foreground">2022 — Present</div>
+                  <div className="text-muted-foreground">@ Kiub</div>
+                  <div className="text-xs text-muted-foreground">2024 — Present</div>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <div className="text-sm text-muted-foreground font-mono">FOCUS</div>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "TypeScript", "HubSpot CMS", "Node.js", "Nextjs", "Javascript", "Zustand", "RTK Query", "React Query", "Tailwind CSS", "Cypress", "Express.js", "Context API", "CSS3"].map((skill) => (
+                  {["React", "TypeScript", "Convex", "Node.js", "Nextjs", "Javascript", "Zustand", "mono-repo", "React Query", "Tailwind CSS", "Cypress", "Express.js", "sentry", "CSS3"].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1 text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
@@ -123,27 +123,34 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl font-light">Selected Work</h2>
-              <div className="text-sm text-muted-foreground font-mono">2017 — 2022</div>
+              <div className="text-sm text-muted-foreground font-mono">2016 — 2024</div>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
               {[
                 {
-                  year: "2021",
+                  year: "2022",
+                  role: "Senior Frontend Engineer",
+                  company: "Talstrike (US, remote)",
+                  description: "Designed and implemented scalable front-end architecture using Next.js, reducing code complexity by 20%. Spearheaded error-handling improvements for third-party APIs, achieving a 98% reliability rating. Developed interactive data visualization dashboards using Chart.js and D3.js, enhancing user insights and decision-making. Created a reusable component library with React and TypeScript, cutting development time for new features by 50%. Review and optimize code quality, mentor junior developers, and foster team growth.Integrate CI/CD pipelines for streamlined deployment processes, ensuring rapid feature delivery.",
+                  tech: ["React", "TypeScript", "Next.js", "Redux", "Cypress", "Tailwind CSS"],
+                },
+                {
+                  year: "2019",
                   role: "Senior Frontend Engineer",
                   company: "The Elastic group. (UK, remote)",
                   description: "Engineered reusable components with React and TypeScript, reducing project timelines by 40%. Led the development of responsive, cross-browser applications, boosting user engagement by 30%. Integrated automated testing frameworks such as Cypress, increasing code reliability by 20%. Streamlined state management with Redux, improving data consistency and reducing bugs by 25%. Optimized application performance through code improvements and bundle size reduction techniques. Collaborated with cross-functional teams, ensuring timely delivery of milestones and high client satisfaction.",
                   tech: ["React", "TypeScript", "Next.js", "Redux", "Cypress", "Tailwind CSS"],
                 },
                 {
-                  year: "2018",
+                  year: "2017",
                   role: "Frontend Web Developer",
                   company: "UNITED BANK FOR AFRICA",
                   description: "Built user-centric interfaces using React and JavaScript, enhancing user satisfaction and retention. Developed SPA solutions with React-Router, optimizing navigation and workflow efficiency. Implemented responsive design principles, ensuring seamless functionality across devices. Leveraged RESTful APIs to fetch and display real-time data, improving operational efficiency. Applied TDD practices, using tools like Jasmine and Karma to maintain high code quality. Conducted performance audits to identify and address bottlenecks, ensuring a smooth user experience.",
                   tech: ["React", "Redux", "React Query"],
                 },
                 {
-                  year: "2017",
+                  year: "2016",
                   role: "Junior Frontend Developer",
                   company: "HUAWEI TECHNOLOGIES",
                   description: "Developed front-end integrations with React.js, ensuring seamless client-side routing. Consumed and handled GraphQL and REST APIs, improving data accessibility and reliability. Designed intuitive UI/UX interfaces aligned with client specifications, enhancing usability. Utilized CSS animations and responsive design to deliver visually engaging applications. Conducted thorough testing to ensure cross-browser compatibility and performance. Collaborated with backend teams to integrate new features seamlessly into existing systems.",
@@ -195,21 +202,27 @@ export default function Home() {
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
               {[
                 {
-                  title: "Kiub OS",
+                  title: "Kiub landing page",
                   excerpt: "With Kiub, you can find notes, decisions, or action items from the same tab.",
-                  date: "Dec 2023",
-                  link: "https://staging.kiub.ai/"
+                  date: "Dec 2025",
+                  link: "https://kiub.ai/"
+                },
+                {
+                  title: "Kiub App",
+                  excerpt: "Kiub helps you journal, capture ideas, organize tasks, take meeting notes — all in one calm space.",
+                  date: "Dec 2024",
+                  link: "https://app.kiub.ai"
                 },
                 {
                   title: "TheFullSnackDevs Academy",
                   excerpt: "TheFullSnackDevs Academy is a tech-focused training platform designed to help individuals build sustainable careers in software development.",
                   date: "Jan 2025",
-                  link: "https://academy.thefullsnackdevs.com/"
+                  link: "https://the-fullsnack-devs-academy-9gxb.vercel.app/"
                 },
                 {
                   title: "Talstrike platform for athlete",
                   excerpt: "A Social media platform for athlete",
-                  date: "Nov 2024",
+                  date: "Nov 2023",
                   link: "https://devapp.talstrike.com"
                 }
               ].map((post, index) => (

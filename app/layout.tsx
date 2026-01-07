@@ -11,7 +11,7 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: "Stanley Sunday - Senior Frontend Developer",
-  description: "HubSpot CMS Developer from Philippines with 5 years of experience.",
+  description: "Senior frontend developer with 5 years of experience.",
 }
 
 export default function RootLayout({
